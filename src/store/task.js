@@ -3,7 +3,6 @@ import todosService from "../services/todos.service";
 import { setError } from "./errors";
 const initialState = {
     entities: [],
-    // post: [],
     isLoading: true
 };
 
@@ -81,6 +80,5 @@ export function taskDeleted(id) {
 
 export const getTasks = () => (state) => state.tasks.entities;
 export const getTasksLoadingStatus = () => (state) => state.tasks.isLoading;
-// export const getPosts = () => (state) => state.tasks.post;
 
 export default taskReducer;

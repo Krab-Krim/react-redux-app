@@ -15,13 +15,6 @@ const todosService = {
             title: "Title-Task",
             completed: false
         });
-        // const {data} = await httpService.post(todosEndepoint, {
-        //     body: JSON.stringify({
-        //         title: 'foo',
-        //         body: 'bar',
-        //         userId: 1,
-        //     })
-        // });
         return data;
     }
 };

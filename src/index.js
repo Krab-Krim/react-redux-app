@@ -8,7 +8,6 @@ import {
     getTasks,
     getTasksLoadingStatus,
     taskPost,
-    // getPosts,
 } from "./store/task";
 import configureStore from "./store/store";
 import { Provider } from "react-redux";
@@ -19,7 +18,6 @@ const store = configureStore();
 
 const App = () => {
     const state = useSelector(getTasks());
-    // const post = useSelector(getPosts());
     const isLoading = useSelector(getTasksLoadingStatus());
     const error = useSelector(getError());
     const dispatch = useDispatch();
@@ -45,9 +43,6 @@ const App = () => {
     if (error) {
         return <p>{error}</p>;
     }
-
-    console.log("Index state", state)
-    // console.log("Index post", post)
 
     return (
         <>
